@@ -32,9 +32,11 @@ extern NSString *const kContentTypeTextPlain;
 extern NSString *const kContentTypeApplicationJSON;
 
 #pragma mark - Localizable Strings Keys
-extern NSString *const kErrTest;
-extern NSString *const kInfTest;
-extern NSString *const kWrnTest;
+extern NSString *const kErrEventReceived;
+extern NSString *const KErrConnectionError;
+
+extern NSString *const kInfConnectionOpen;
+extern NSString *const kInfEventReceived;
 
 #pragma mark - Segue Identifiers
 @end

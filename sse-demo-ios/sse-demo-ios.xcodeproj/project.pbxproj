@@ -33,6 +33,9 @@
 		B59E08DA1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */; };
 		B59E08DB1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */; };
 		B59E08DC1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */; };
+		B5AE3FE21C9857A90080B19E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5AE3FE61C9857A90080B19E /* Localizable.strings */; };
+		B5AE3FE31C9857A90080B19E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5AE3FE61C9857A90080B19E /* Localizable.strings */; };
+		B5AE3FE41C9857A90080B19E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5AE3FE61C9857A90080B19E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,10 @@
 		B59E08D41C9717F10024B03D /* CustomerCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomerCustomTableViewCell.h; path = View/CustomerCustomTableViewCell.h; sourceTree = "<group>"; };
 		B59E08D51C9717F10024B03D /* CustomerCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerCustomTableViewCell.m; path = View/CustomerCustomTableViewCell.m; sourceTree = "<group>"; };
 		B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomerCustomTableViewCell.xib; path = View/CustomerCustomTableViewCell.xib; sourceTree = "<group>"; };
+		B5AE3FD51C984D8B0080B19E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		B5AE3FD61C984D8B0080B19E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B5AE3FD81C984DC00080B19E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B5AE3FE51C9857A90080B19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C8BF704A5D5A0E5139F5C656 /* Pods-sse-demo-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sse-demo-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sse-demo-ios/Pods-sse-demo-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		CA12C849AE39492A31812DA7 /* libPods-sse-demo-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sse-demo-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,6 +161,7 @@
 		B59E087B1C96E2860024B03D /* sse-demo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B5AE3FD91C984E1B0080B19E /* Resource */,
 				B59E08D31C9717A80024B03D /* View */,
 				B59E08CD1C96F3350024B03D /* ViewController */,
 				B59E08C61C96EFE80024B03D /* Entity */,
@@ -278,6 +286,14 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		B5AE3FD91C984E1B0080B19E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE3FE61C9857A90080B19E /* Localizable.strings */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		D69B65BB4538B569245A153C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +411,7 @@
 			files = (
 				B59E08DA1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */,
 				B59E088C1C96E2860024B03D /* LaunchScreen.storyboard in Resources */,
+				B5AE3FE21C9857A90080B19E /* Localizable.strings in Resources */,
 				B59E08891C96E2860024B03D /* Assets.xcassets in Resources */,
 				B59E08871C96E2860024B03D /* Main.storyboard in Resources */,
 			);
@@ -405,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59E08DB1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */,
+				B5AE3FE31C9857A90080B19E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59E08DC1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */,
+				B5AE3FE41C9857A90080B19E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +546,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				B59E08861C96E2860024B03D /* Base */,
+				B5AE3FD51C984D8B0080B19E /* pt-BR */,
+				B5AE3FD81C984DC00080B19E /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -535,8 +556,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				B59E088B1C96E2860024B03D /* Base */,
+				B5AE3FD61C984D8B0080B19E /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5AE3FE61C9857A90080B19E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AE3FE51C9857A90080B19E /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

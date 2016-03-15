@@ -24,7 +24,7 @@
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha: 12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHp-5m-aBA">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Id: 12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHp-5m-aBA">
                         <rect key="frame" x="37" y="8" width="240" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="240" id="qLH-WP-3GA"/>
@@ -55,7 +55,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="hashLabel" destination="fHp-5m-aBA" id="92b-xz-ovj"/>
+                <outlet property="idLabel" destination="fHp-5m-aBA" id="hE6-Gb-YEd"/>
                 <outlet property="nameLabel" destination="56U-We-S2y" id="m2l-U1-bnO"/>
                 <outlet property="orderLabel" destination="xWe-lm-rvl" id="7Xz-Dd-avf"/>
             </connections>

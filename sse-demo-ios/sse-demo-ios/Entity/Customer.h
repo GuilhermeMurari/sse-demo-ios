@@ -10,10 +10,10 @@
 
 @interface Customer : Entity
 
-@property(strong, nonatomic) NSString *customerId;
+@property(nonatomic) NSInteger customerId;
 @property(strong, nonatomic) NSString *name;
 @property(strong, nonatomic) NSNumber *storeId;
 
-- (instancetype)initWithCustomerId:(NSString *)customerId withStoreId:(NSNumber *)storeId withName:(NSString *)name;
+- (instancetype)initWithCustomerId:(NSInteger) customerId withStoreId:(NSNumber *)storeId withName:(NSString *)name;
 
 @end

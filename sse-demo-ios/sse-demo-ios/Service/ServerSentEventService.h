@@ -7,12 +7,15 @@
 //
 #import "Customer.h"
 #import "ServerEvent.h"
+#import <EventSource.h>
 
 typedef void (^EventServiceBlock)(ServerEvent *event);
 typedef void (^ErrorServiceBlock)(NSError *error);
+typedef void (^OpenServiceBlock)(Event *event);
+
 
 @interface ServerSentEventService : NSObject
 
-+(void)listenToEventsWithEventHandler:(EventServiceBlock)eventHandler withFailureHandler:(ErrorServiceBlock)failureHandler;
++(void)listenToEventsWithEventHandler:(EventServiceBlock)eventHandler withOpenHandler:(OpenServiceBlock)openHandler withErrorHandler:(EventServiceBlock)errorHandler withFailureHandler:(ErrorServiceBlock)failureHandler;
 
 @end

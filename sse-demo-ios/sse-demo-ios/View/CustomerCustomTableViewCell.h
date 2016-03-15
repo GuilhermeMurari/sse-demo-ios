@@ -11,7 +11,7 @@
 @interface CustomerCustomTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *hashLabel;
+@property (weak, nonatomic) IBOutlet UILabel *idLabel;
 @property (weak, nonatomic) IBOutlet UILabel *orderLabel;
 
 @end

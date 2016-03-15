@@ -11,7 +11,7 @@
 
 @implementation Customer
 
-- (instancetype)initWithCustomerId:(NSString *)customerId withStoreId:(NSNumber *)storeId withName:(NSString *)name {
+- (instancetype)initWithCustomerId:(NSInteger) customerId withStoreId:(NSNumber *)storeId withName:(NSString *)name {
     self = [super init];
     
     if (self) {
@@ -27,7 +27,7 @@
 
 - (NSDictionary *)toDictionary {
     return @{
-             @"customerId"   : _customerId ? _customerId : @0,
+             @"customerId"   : _customerId ? @(_customerId) : @-1,
              @"name" : _name ? _name : @"",
              @"storeId"  : _storeId ? _storeId : @0
              };
@@ -37,7 +37,7 @@
     Customer* customer = [Customer new];
     
     if (dict) {
-        customer.customerId = [JSONDeserializationHelper deserialazedStringWithDictionary:dict withKey:@"customerId"];
+        customer.customerId = [JSONDeserializationHelper deserialazedIntegerWithDictionary:dict withKey:@"customerId"];
         customer.name = [JSONDeserializationHelper deserialazedStringWithDictionary:dict withKey:@"name"];
         customer.storeId = [JSONDeserializationHelper deserialazedNumberWithDictionary:dict withKey:@"storeId"];
     }

@@ -9,23 +9,22 @@
 #import "ServerSentEventService.h"
 #import "URIFactory.h"
 #import "ServerEvent.h"
-#import <EventSource.h>
 
 @implementation ServerSentEventService
 
-+(void)listenToEventsWithEventHandler:(EventServiceBlock)eventHandler withFailureHandler:(ErrorServiceBlock)failureHandler {
++(void)listenToEventsWithEventHandler:(EventServiceBlock)eventHandler withOpenHandler:(OpenServiceBlock)openHandler withErrorHandler:(EventServiceBlock)errorHandler withFailureHandler:(ErrorServiceBlock)failureHandler {
+    
     EventSource *source = [EventSource eventSourceWithURL:[NSURL URLWithString:[URIFactory buildEvents]]];
+    
     [source onOpen:^(Event *event) {
-        NSLog(@"Opened!");
-    }];
-    [source onError:^(Event *event) {
-        NSLog(@"Error!");
-    }];
-    [source onMessage:^(Event *event) {
-        NSLog(@"Message received");
+        openHandler(event);
     }];
     
-    [source addEventListener:@"message" handler:^(Event *event) {
+    [source onError:^(Event *event) {
+        errorHandler(nil);
+    }];
+    
+    [source onMessage:^(Event *event) {
         if (event && event.data) {
             NSError *error;
             NSMutableDictionary *dict = [NSJSONSerialization JSONObjectWithData:[event.data dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&error];

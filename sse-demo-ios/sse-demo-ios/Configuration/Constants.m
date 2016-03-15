@@ -34,9 +34,11 @@ NSString *const kContentTypeTextPlain = @"text/html";
 NSString *const kContentTypeApplicationJSON = @"application/json";
 
 #pragma mark - Localizable Strings Keys
-NSString *const kErrTest = @"errTest";
-NSString *const kInfTest = @"infTest";
-NSString *const kWrnTes = @"wrnTest";
+NSString *const kErrEventReceived = @"errEventReceived";
+NSString *const KErrConnectionError = @"errConnectionError";
+
+NSString *const kInfConnectionOpen = @"infConnectionOpen";
+NSString *const kInfEventReceived = @"infEventReceived";
 
 #pragma mark - Segue Identifiers
 

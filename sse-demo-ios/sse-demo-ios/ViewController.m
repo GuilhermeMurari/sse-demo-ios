@@ -40,25 +40,27 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
-//    static NSString *identifier = @"CustomerCustomCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    static NSString *identifier = @"CustomerCustomCell";
+    CustomerCustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
     Customer *customer = [_customers objectAtIndex:indexPath.row];
     
     if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-//        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomerCustomTableViewCell" owner:self options:nil];
-//        cell = [nib objectAtIndex:0];
+        cell = (CustomerCustomTableViewCell *) [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomerCustomTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.textLabel.text = customer.name;//[NSString stringWithFormat: @"%ld", (long)indexPath.row];
-//    cell.hashLabel.text = customer.customerId;
-//    cell.nameLabel.text = customer.name;
+    cell.nameLabel.text = customer.name;
+    cell.idLabel.text = [NSString stringWithFormat: @"%ld", (long)customer.customerId];
+    cell.orderLabel.text = [NSString stringWithFormat: @"%ld", (long)indexPath.row + 1];
     
     return cell;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.0f;
+}
 
 @end

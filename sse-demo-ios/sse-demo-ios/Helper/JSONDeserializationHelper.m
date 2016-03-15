@@ -26,6 +26,14 @@
     }
 }
 
++(NSInteger) deserialazedIntegerWithDictionary:(NSDictionary *)dict withKey:(NSString *)key {
+    if ([JSONDeserializationHelper emptyDictKeyWithDictionary:dict withKey:key]) {
+        return -1;
+    } else {
+        return [[dict objectForKey:key] intValue];
+    }
+}
+
 +(BOOL)emptyDictKeyWithDictionary:(NSDictionary *)dict  withKey:(NSString *)key {
     return dict == nil || [[dict objectForKey:key] isEqual:[NSNull null]] || !dict;
 }

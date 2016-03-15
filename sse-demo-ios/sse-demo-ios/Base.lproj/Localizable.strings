@@ -1,0 +1,12 @@
+/* 
+  Localizable_PT-BR.strings
+  sse-demo-ios
+
+  Created by Guilherme Murari on 3/15/16.
+  Copyright © 2016 Guilherme Murari. All rights reserved.
+*/
+"infEventReceived"  = "Evento recebido! :)";
+"infConnectionOpen" = "Conexão aberta com o servidor!";
+
+"errEventReceived" = "Não foi possível processar o evento recebido...";
+"errConnectionError" = "Houve um erro ao se comunicar com o servidor de eventos! Tente novamente!";

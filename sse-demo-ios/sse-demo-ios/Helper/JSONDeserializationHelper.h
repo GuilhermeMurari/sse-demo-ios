@@ -11,6 +11,7 @@
 @interface JSONDeserializationHelper : NSObject
 
 +(NSNumber *)deserialazedNumberWithDictionary:(NSDictionary *)dict withKey:(NSString *)key;
++(NSInteger) deserialazedIntegerWithDictionary:(NSDictionary *)dict withKey:(NSString *)key;
 +(NSString *)deserialazedStringWithDictionary:(NSDictionary *)dict withKey:(NSString *)key;
 +(BOOL)emptyDictKeyWithDictionary:(NSDictionary *)dict  withKey:(NSString *)key;
 
