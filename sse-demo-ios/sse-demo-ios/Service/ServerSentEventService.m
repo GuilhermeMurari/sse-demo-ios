@@ -15,18 +15,28 @@
 
 +(void)listenToEventsWithEventHandler:(EventServiceBlock)eventHandler withFailureHandler:(ErrorServiceBlock)failureHandler {
     EventSource *source = [EventSource eventSourceWithURL:[NSURL URLWithString:[URIFactory buildEvents]]];
+    [source onOpen:^(Event *event) {
+        NSLog(@"Opened!");
+    }];
+    [source onError:^(Event *event) {
+        NSLog(@"Error!");
+    }];
+    [source onMessage:^(Event *event) {
+        NSLog(@"Message received");
+    }];
+    
     [source addEventListener:@"message" handler:^(Event *event) {
-        if (event) {
+        if (event && event.data) {
             NSError *error;
             NSMutableDictionary *dict = [NSJSONSerialization JSONObjectWithData:[event.data dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&error];
             
-            ServerEvent *event = [ServerEvent fromDictionary:[dict copy]];
+            ServerEvent *serverEvent = [ServerEvent fromDictionary:[dict copy]];
             
-            if (error) {
+            if (error.domain) {
                 failureHandler(error);
             }
             
-            eventHandler(event);
+            eventHandler(serverEvent);
         } else {
             failureHandler(nil);
         }

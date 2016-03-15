@@ -13,9 +13,9 @@
 
 @implementation ServerSentEventManager
 
-+ (void)retrieveCurrentUserWith:(CustomersManagerBlock) handler {
++ (void)listenToEventsWith:(ServerEventManagerBlock) handler {
     [ServerSentEventService listenToEventsWithEventHandler:^(ServerEvent *event) {
-        handler(event.customers, nil);
+        handler(event, nil);
     } withFailureHandler:^(NSError *error) {
         handler(nil, error);
         

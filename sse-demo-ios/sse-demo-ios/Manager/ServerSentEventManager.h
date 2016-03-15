@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Customer.h"
+#import "ServerEvent.h"
 
-typedef void (^CustomersManagerBlock)(NSArray *customers, NSError *error);
+typedef void (^ServerEventManagerBlock)(ServerEvent *serverEvent, NSError *error);
 
 @interface ServerSentEventManager : NSObject
 
-+ (void)retrieveCurrentUserWith:(CustomersManagerBlock) handler;
++ (void)listenToEventsWith:(ServerEventManagerBlock) handler;
 
 @end

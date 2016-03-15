@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="OpenSans-Regular.ttf">
@@ -22,11 +23,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1l9-zh-2wo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="79" width="600" height="721"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="anb-WP-L2R"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0ye-Z8-5Hp"/>
+                                </connections>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYg-XT-Wfn">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.61568627450000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="544" id="ZTJ-9E-fiL"/>
                                     <constraint firstAttribute="height" constant="45" id="diH-fH-2Jr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
@@ -35,13 +47,11 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="ZTJ-9E-fiL"/>
                                         <exclude reference="diH-fH-2Jr"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
-                                        <include reference="ZTJ-9E-fiL"/>
                                         <include reference="diH-fH-2Jr"/>
                                     </mask>
                                 </variation>
@@ -49,41 +59,39 @@
                                     <action selector="listenEvents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uV9-Ym-TGH"/>
                                 </connections>
                             </button>
-                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1l9-zh-2wo">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="79" width="600" height="721"/>
-                                </variation>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.090196078430000007" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="OYg-XT-Wfn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b80-eF-cwe"/>
+                            <constraint firstItem="OYg-XT-Wfn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="B80-GI-Fjd"/>
                             <constraint firstItem="OYg-XT-Wfn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s7T-CP-wJj"/>
+                            <constraint firstItem="OYg-XT-Wfn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wn8-XG-Ftc"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="OYg-XT-Wfn"/>
                                 <exclude reference="1l9-zh-2wo"/>
+                                <exclude reference="OYg-XT-Wfn"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="b80-eF-cwe"/>
+                                <exclude reference="B80-GI-Fjd"/>
                                 <exclude reference="s7T-CP-wJj"/>
+                                <exclude reference="wn8-XG-Ftc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
-                                <include reference="OYg-XT-Wfn"/>
                                 <include reference="1l9-zh-2wo"/>
+                                <include reference="OYg-XT-Wfn"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="b80-eF-cwe"/>
+                                <include reference="B80-GI-Fjd"/>
                                 <include reference="s7T-CP-wJj"/>
+                                <include reference="wn8-XG-Ftc"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="customersTableView" destination="1l9-zh-2wo" id="3oF-1C-h58"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

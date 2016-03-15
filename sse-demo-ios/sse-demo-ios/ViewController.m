@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "CustomerCustomTableViewCell.h"
 #import "Customer.h"
+#import "ServerSentEventManager.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *customersTableView;
 @property (nonatomic, strong) NSArray *customers;
 @end
 
@@ -26,12 +28,15 @@
 }
 
 - (IBAction)listenEvents:(id)sender {
-    
+    [ServerSentEventManager listenToEventsWith:^(ServerEvent *serverEvent, NSError *error) {
+        _customers = serverEvent.customers;
+        [_customersTableView reloadData];
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_customers count];
+    return _customers ? [_customers count] : 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -47,9 +52,10 @@
         cell = [nib objectAtIndex:0];
     }
     
-    [cell.orderLabel setText:[NSString stringWithFormat: @"%ld", (long)indexPath.row]];
-    [cell.hashLabel setText:customer.customerId];
-    [cell.nameLabel setText:customer.name];
+    cell.orderLabel.text = [NSString stringWithFormat: @"%ld", (long)indexPath.row];
+    cell.hashLabel.text = customer.customerId;
+    cell.nameLabel.text = customer.name;
+    
     return cell;
 }
 

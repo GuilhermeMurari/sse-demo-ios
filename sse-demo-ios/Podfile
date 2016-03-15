@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'sse-demo-ios' do
+
+    pod 'SVProgressHUD'
+    pod 'EventSource'
+
+end
+
+target 'sse-demo-iosTests' do
+
+end
+
+target 'sse-demo-iosUITests' do
+
+end
+
