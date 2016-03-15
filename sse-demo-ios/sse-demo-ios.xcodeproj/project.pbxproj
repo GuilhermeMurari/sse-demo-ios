@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98AA2C67066533849D10C37A /* libPods-sse-demo-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA12C849AE39492A31812DA7 /* libPods-sse-demo-ios.a */; };
 		B59E087E1C96E2860024B03D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E087D1C96E2860024B03D /* main.m */; };
 		B59E08811C96E2860024B03D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08801C96E2860024B03D /* AppDelegate.m */; };
 		B59E08841C96E2860024B03D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08831C96E2860024B03D /* ViewController.m */; };
@@ -15,6 +16,23 @@
 		B59E088C1C96E2860024B03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59E088A1C96E2860024B03D /* LaunchScreen.storyboard */; };
 		B59E08971C96E2860024B03D /* sse_demo_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08961C96E2860024B03D /* sse_demo_iosTests.m */; };
 		B59E08A21C96E2860024B03D /* sse_demo_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08A11C96E2860024B03D /* sse_demo_iosUITests.m */; };
+		B59E08B51C96E6310024B03D /* URIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08B21C96E6310024B03D /* URIFactory.m */; };
+		B59E08B61C96E6310024B03D /* URLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08B41C96E6310024B03D /* URLUtils.m */; };
+		B59E08B91C96E63B0024B03D /* ServerSentEventService.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08B81C96E63B0024B03D /* ServerSentEventService.m */; };
+		B59E08BE1C96E7610024B03D /* ServerSentEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08BD1C96E7610024B03D /* ServerSentEventManager.m */; };
+		B59E08C11C96E76B0024B03D /* JSONDeserializationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08C01C96E76B0024B03D /* JSONDeserializationHelper.m */; };
+		B59E08C51C96E7DB0024B03D /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08C41C96E7DB0024B03D /* Constants.m */; };
+		B59E08CB1C96EFF80024B03D /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08C81C96EFF80024B03D /* Entity.m */; };
+		B59E08CC1C96EFF80024B03D /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08CA1C96EFF80024B03D /* Customer.m */; };
+		B59E08D01C9709780024B03D /* ServerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08CF1C9709780024B03D /* ServerEvent.m */; };
+		B59E08D11C9709780024B03D /* ServerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08CF1C9709780024B03D /* ServerEvent.m */; };
+		B59E08D21C9709780024B03D /* ServerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08CF1C9709780024B03D /* ServerEvent.m */; };
+		B59E08D71C9717F10024B03D /* CustomerCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08D51C9717F10024B03D /* CustomerCustomTableViewCell.m */; };
+		B59E08D81C9717F10024B03D /* CustomerCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08D51C9717F10024B03D /* CustomerCustomTableViewCell.m */; };
+		B59E08D91C9717F10024B03D /* CustomerCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E08D51C9717F10024B03D /* CustomerCustomTableViewCell.m */; };
+		B59E08DA1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */; };
+		B59E08DB1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */; };
+		B59E08DC1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4373967FD866D1E273AE3975 /* Pods-sse-demo-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sse-demo-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-sse-demo-ios/Pods-sse-demo-ios.release.xcconfig"; sourceTree = "<group>"; };
 		B59E08791C96E2860024B03D /* sse-demo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sse-demo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59E087D1C96E2860024B03D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B59E087F1C96E2860024B03D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +70,29 @@
 		B59E089D1C96E2860024B03D /* sse-demo-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sse-demo-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59E08A11C96E2860024B03D /* sse_demo_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sse_demo_iosUITests.m; sourceTree = "<group>"; };
 		B59E08A31C96E2860024B03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59E08B11C96E6310024B03D /* URIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URIFactory.h; path = Service/URL/URIFactory.h; sourceTree = "<group>"; };
+		B59E08B21C96E6310024B03D /* URIFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URIFactory.m; path = Service/URL/URIFactory.m; sourceTree = "<group>"; };
+		B59E08B31C96E6310024B03D /* URLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URLUtils.h; path = Service/URL/URLUtils.h; sourceTree = "<group>"; };
+		B59E08B41C96E6310024B03D /* URLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URLUtils.m; path = Service/URL/URLUtils.m; sourceTree = "<group>"; };
+		B59E08B71C96E63B0024B03D /* ServerSentEventService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerSentEventService.h; path = Service/ServerSentEventService.h; sourceTree = "<group>"; };
+		B59E08B81C96E63B0024B03D /* ServerSentEventService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerSentEventService.m; path = Service/ServerSentEventService.m; sourceTree = "<group>"; };
+		B59E08BC1C96E7610024B03D /* ServerSentEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerSentEventManager.h; path = Manager/ServerSentEventManager.h; sourceTree = "<group>"; };
+		B59E08BD1C96E7610024B03D /* ServerSentEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerSentEventManager.m; path = Manager/ServerSentEventManager.m; sourceTree = "<group>"; };
+		B59E08BF1C96E76B0024B03D /* JSONDeserializationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONDeserializationHelper.h; path = Helper/JSONDeserializationHelper.h; sourceTree = "<group>"; };
+		B59E08C01C96E76B0024B03D /* JSONDeserializationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONDeserializationHelper.m; path = Helper/JSONDeserializationHelper.m; sourceTree = "<group>"; };
+		B59E08C31C96E7DB0024B03D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Configuration/Constants.h; sourceTree = "<group>"; };
+		B59E08C41C96E7DB0024B03D /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Configuration/Constants.m; sourceTree = "<group>"; };
+		B59E08C71C96EFF80024B03D /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = Entity/Entity.h; sourceTree = "<group>"; };
+		B59E08C81C96EFF80024B03D /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = Entity/Entity.m; sourceTree = "<group>"; };
+		B59E08C91C96EFF80024B03D /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Customer.h; path = Entity/Customer.h; sourceTree = "<group>"; };
+		B59E08CA1C96EFF80024B03D /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customer.m; path = Entity/Customer.m; sourceTree = "<group>"; };
+		B59E08CE1C9709780024B03D /* ServerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerEvent.h; path = Entity/ServerEvent.h; sourceTree = "<group>"; };
+		B59E08CF1C9709780024B03D /* ServerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerEvent.m; path = Entity/ServerEvent.m; sourceTree = "<group>"; };
+		B59E08D41C9717F10024B03D /* CustomerCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomerCustomTableViewCell.h; path = View/CustomerCustomTableViewCell.h; sourceTree = "<group>"; };
+		B59E08D51C9717F10024B03D /* CustomerCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerCustomTableViewCell.m; path = View/CustomerCustomTableViewCell.m; sourceTree = "<group>"; };
+		B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomerCustomTableViewCell.xib; path = View/CustomerCustomTableViewCell.xib; sourceTree = "<group>"; };
+		C8BF704A5D5A0E5139F5C656 /* Pods-sse-demo-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sse-demo-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sse-demo-ios/Pods-sse-demo-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		CA12C849AE39492A31812DA7 /* libPods-sse-demo-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sse-demo-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AA2C67066533849D10C37A /* libPods-sse-demo-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42B52B72FF21A185BBE619BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA12C849AE39492A31812DA7 /* libPods-sse-demo-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B59E08701C96E2860024B03D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +136,8 @@
 				B59E08951C96E2860024B03D /* sse-demo-iosTests */,
 				B59E08A01C96E2860024B03D /* sse-demo-iosUITests */,
 				B59E087A1C96E2860024B03D /* Products */,
+				D69B65BB4538B569245A153C /* Pods */,
+				42B52B72FF21A185BBE619BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +154,15 @@
 		B59E087B1C96E2860024B03D /* sse-demo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B59E08D31C9717A80024B03D /* View */,
+				B59E08CD1C96F3350024B03D /* ViewController */,
+				B59E08C61C96EFE80024B03D /* Entity */,
+				B59E08C21C96E7890024B03D /* Configuration */,
+				B59E08BB1C96E7570024B03D /* Helper */,
+				B59E08BA1C96E7510024B03D /* Manager */,
+				B59E08AF1C96E6180024B03D /* Service */,
 				B59E087F1C96E2860024B03D /* AppDelegate.h */,
 				B59E08801C96E2860024B03D /* AppDelegate.m */,
-				B59E08821C96E2860024B03D /* ViewController.h */,
-				B59E08831C96E2860024B03D /* ViewController.m */,
 				B59E08851C96E2860024B03D /* Main.storyboard */,
 				B59E08881C96E2860024B03D /* Assets.xcassets */,
 				B59E088A1C96E2860024B03D /* LaunchScreen.storyboard */,
@@ -140,6 +198,95 @@
 			path = "sse-demo-iosUITests";
 			sourceTree = "<group>";
 		};
+		B59E08AF1C96E6180024B03D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B59E08B71C96E63B0024B03D /* ServerSentEventService.h */,
+				B59E08B81C96E63B0024B03D /* ServerSentEventService.m */,
+				B59E08B01C96E6200024B03D /* URL */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		B59E08B01C96E6200024B03D /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				B59E08B11C96E6310024B03D /* URIFactory.h */,
+				B59E08B21C96E6310024B03D /* URIFactory.m */,
+				B59E08B31C96E6310024B03D /* URLUtils.h */,
+				B59E08B41C96E6310024B03D /* URLUtils.m */,
+			);
+			name = URL;
+			sourceTree = "<group>";
+		};
+		B59E08BA1C96E7510024B03D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B59E08BC1C96E7610024B03D /* ServerSentEventManager.h */,
+				B59E08BD1C96E7610024B03D /* ServerSentEventManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		B59E08BB1C96E7570024B03D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B59E08BF1C96E76B0024B03D /* JSONDeserializationHelper.h */,
+				B59E08C01C96E76B0024B03D /* JSONDeserializationHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		B59E08C21C96E7890024B03D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B59E08C31C96E7DB0024B03D /* Constants.h */,
+				B59E08C41C96E7DB0024B03D /* Constants.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		B59E08C61C96EFE80024B03D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B59E08C71C96EFF80024B03D /* Entity.h */,
+				B59E08C81C96EFF80024B03D /* Entity.m */,
+				B59E08C91C96EFF80024B03D /* Customer.h */,
+				B59E08CA1C96EFF80024B03D /* Customer.m */,
+				B59E08CE1C9709780024B03D /* ServerEvent.h */,
+				B59E08CF1C9709780024B03D /* ServerEvent.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		B59E08CD1C96F3350024B03D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B59E08821C96E2860024B03D /* ViewController.h */,
+				B59E08831C96E2860024B03D /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B59E08D31C9717A80024B03D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B59E08D41C9717F10024B03D /* CustomerCustomTableViewCell.h */,
+				B59E08D51C9717F10024B03D /* CustomerCustomTableViewCell.m */,
+				B59E08D61C9717F10024B03D /* CustomerCustomTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D69B65BB4538B569245A153C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8BF704A5D5A0E5139F5C656 /* Pods-sse-demo-ios.debug.xcconfig */,
+				4373967FD866D1E273AE3975 /* Pods-sse-demo-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B59E08A61C96E2860024B03D /* Build configuration list for PBXNativeTarget "sse-demo-ios" */;
 			buildPhases = (
+				030E16BCB558E3A88F40FC20 /* Check Pods Manifest.lock */,
 				B59E08751C96E2860024B03D /* Sources */,
 				B59E08761C96E2860024B03D /* Frameworks */,
 				B59E08771C96E2860024B03D /* Resources */,
+				DEBEFC1AE232324447527199 /* Embed Pods Frameworks */,
+				537D8DA012E8F64A8BE482AE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59E08DA1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */,
 				B59E088C1C96E2860024B03D /* LaunchScreen.storyboard in Resources */,
 				B59E08891C96E2860024B03D /* Assets.xcassets in Resources */,
 				B59E08871C96E2860024B03D /* Main.storyboard in Resources */,
@@ -253,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59E08DB1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,19 +412,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59E08DC1C9717F10024B03D /* CustomerCustomTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		030E16BCB558E3A88F40FC20 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		537D8DA012E8F64A8BE482AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sse-demo-ios/Pods-sse-demo-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEBEFC1AE232324447527199 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sse-demo-ios/Pods-sse-demo-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B59E08751C96E2860024B03D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59E08D01C9709780024B03D /* ServerEvent.m in Sources */,
+				B59E08CB1C96EFF80024B03D /* Entity.m in Sources */,
+				B59E08B61C96E6310024B03D /* URLUtils.m in Sources */,
+				B59E08BE1C96E7610024B03D /* ServerSentEventManager.m in Sources */,
 				B59E08841C96E2860024B03D /* ViewController.m in Sources */,
 				B59E08811C96E2860024B03D /* AppDelegate.m in Sources */,
 				B59E087E1C96E2860024B03D /* main.m in Sources */,
+				B59E08D71C9717F10024B03D /* CustomerCustomTableViewCell.m in Sources */,
+				B59E08CC1C96EFF80024B03D /* Customer.m in Sources */,
+				B59E08B91C96E63B0024B03D /* ServerSentEventService.m in Sources */,
+				B59E08B51C96E6310024B03D /* URIFactory.m in Sources */,
+				B59E08C11C96E76B0024B03D /* JSONDeserializationHelper.m in Sources */,
+				B59E08C51C96E7DB0024B03D /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +491,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59E08D11C9709780024B03D /* ServerEvent.m in Sources */,
 				B59E08971C96E2860024B03D /* sse_demo_iosTests.m in Sources */,
+				B59E08D81C9717F10024B03D /* CustomerCustomTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +501,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59E08D21C9709780024B03D /* ServerEvent.m in Sources */,
 				B59E08A21C96E2860024B03D /* sse_demo_iosUITests.m in Sources */,
+				B59E08D91C9717F10024B03D /* CustomerCustomTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +626,7 @@
 		};
 		B59E08A71C96E2860024B03D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8BF704A5D5A0E5139F5C656 /* Pods-sse-demo-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "sse-demo-ios/Info.plist";
@@ -422,6 +638,7 @@
 		};
 		B59E08A81C96E2860024B03D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4373967FD866D1E273AE3975 /* Pods-sse-demo-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "sse-demo-ios/Info.plist";
@@ -498,6 +715,7 @@
 				B59E08A81C96E2860024B03D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B59E08A91C96E2860024B03D /* Build configuration list for PBXNativeTarget "sse-demo-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +724,7 @@
 				B59E08AB1C96E2860024B03D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B59E08AC1C96E2860024B03D /* Build configuration list for PBXNativeTarget "sse-demo-iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +733,7 @@
 				B59E08AE1C96E2860024B03D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

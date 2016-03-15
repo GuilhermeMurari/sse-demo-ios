@@ -7,21 +7,51 @@
 //
 
 #import "ViewController.h"
+#import "CustomerCustomTableViewCell.h"
+#import "Customer.h"
 
-@interface ViewController ()
-
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) NSArray *customers;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _customers = [[NSMutableArray new] copy];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)listenEvents:(id)sender {
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_customers count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identifier = @"CustomerCustomCell";
+    
+    CustomerCustomTableViewCell *cell = (CustomerCustomTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    Customer *customer = [_customers objectAtIndex:indexPath.row];
+    
+    if(cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomerCustomTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    [cell.orderLabel setText:[NSString stringWithFormat: @"%ld", (long)indexPath.row]];
+    [cell.hashLabel setText:customer.customerId];
+    [cell.nameLabel setText:customer.name];
+    return cell;
+}
+
 
 @end
